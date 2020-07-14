@@ -8,3 +8,8 @@
 
 // 打包构建速度优化
 // 1.通过DllPlugin插件优化打包性能，减少打包时间
+
+
+// 打包后项目bug
+// 图片不显示：build/utils.js下在ExtractTextPlugin.extract配置中加上publicPath: '../../'（48行左右）
+// 页面白屏：config/index.js下61行assetsPublicPath改为'./'
